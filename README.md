@@ -2,33 +2,35 @@
 
 
 
-[![Dependency Status](https://gemnasium.com/itnick/pm2-env-test.svg)](https://gemnasium.com/itnick/pm2-env-test)
+## Node.js version: 4.2.3 // pm2 version: 0.15.10
 
-[![node](https://img.shields.io/node/v/pm2-env-test.svg)]()
-[![npm](https://img.shields.io/npm/v/pm2-env-test.svg)]()
-[![npm](https://img.shields.io/npm/dm/pm2-env-test.svg)]()
-[![npm](https://img.shields.io/npm/l/pm2-env-test.svg)]()
+### Case: when environment variable is undefined
 
-![codecov.io](http://codecov.io/github/itnick/pm2-env-test/branch.svg?branch=master)
-
-pm2 ENV test
-## Installation
-```
-npm install xxxx
+```shell
+echo $NODE_ENV
 ```
 
-## Test
+
+
+If `NODE_ENV` is defined, unset it:
+
+```shell
+unset NODE_ENV
 ```
-npm test
+
+
+
+Run the program without pm2:
+
+```shell
+node index.js
 ```
 
-## Examples
-_(Coming soon)_
+Expected output:
 
-## Known Issues
-- Some problems xxxxx. See #1264.
+```
+NODE_ENV: undefined
+NODE_ENV: undefined
+NODE_ENV: undefined
+```
 
-## License
-Copyright (c) 2016 AfterShip
-
-Licensed under the MIT license.

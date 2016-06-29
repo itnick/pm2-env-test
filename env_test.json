@@ -1,0 +1,11 @@
+[
+	{
+		"name": "pm2-env-test",
+		"script": "index.js",
+		"log_date_format": "YYYY-MM-DD HH:mm:ss:SSS Z",
+		"env": {
+			"NODE_ENV": "testing"
+		},
+		"exec_mode": "fork_mode"
+	}
+]

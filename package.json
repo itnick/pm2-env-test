@@ -26,12 +26,8 @@
   "devDependencies": {
     "eslint-config-aftership": "^2.0.0",
     "grunt": "^1.0.1",
-    "load-grunt-config": "^0.19.1",
-    "pre-commit": "^1.1.2"
+    "load-grunt-config": "^0.19.1"
   },
   "license": "MIT",
-  "pre-commit": [
-    "lint"
-  ],
   "private": false
 }
